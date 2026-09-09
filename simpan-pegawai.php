@@ -17,4 +17,7 @@ $stmt->execute([
     ':tanggalbergabung' => $tanggalbergabung
 ]);
 
-echo "Data pegawai berhasil disimpan.";
+$_SESSION['flash_message'] = "Data pegawai berhasil disimpan";
+$_SESSION['flash_message_type'] = "Sudcces";
+header("Location: index.php");
+exit;
