@@ -1,9 +1,16 @@
 <?php
+$envFile = __DIR__ . '/../.env';
 
-$host = "localhost";
-$dbname = "wesitecuy";
-$username = "root";
-$password = "";
+if (!file_exists($envFile)) {
+    die("File .env tidak ditemukan");
+}
+
+$env = parse_ini_file($envFile);
+
+$host = $env['DB_HOST'];
+$dbname = $env['DB_NAME'];
+$username = $env['DB_USER'];
+$password = $env['DB_PASS'];
 
 try {
     $pdo = new PDO(

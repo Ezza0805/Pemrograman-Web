@@ -18,6 +18,6 @@ $stmt->execute([
 ]);
 
 $_SESSION['flash_message'] = "Data pegawai berhasil disimpan";
-$_SESSION['flash_message_type'] = "Sudcces";
+$_SESSION['flash_message_type'] = "Succes";
 header("Location: index.php");
 exit;

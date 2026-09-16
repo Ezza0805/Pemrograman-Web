@@ -77,8 +77,8 @@ include_once 'config/config.php';
                         <td><?= $p["tanggal_bergabung"]; ?></td>
                         <td><?= $p["aktif"] == 1 ? 'Aktif' : 'Tidak Aktif'; ?></td>
                         <td>
-                            <a href="#" class="btn-edit">Edit</a>
-                            <a href="#" class="btn-hapus">Hapus</a>
+                            <a href="edit_pegawai.php?id=<?= $p['id_pegawai']; ?>" class="btn-edit">Edit</a>
+                            <a href="hapus_pegawai.php?id<?= $p['id_pegawai']; ?>" class="btn-hapus">Hapus</a>
                         </td>
                     </tr>
 

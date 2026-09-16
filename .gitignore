@@ -1,0 +1,13 @@
+# File environment
+.env
+
+# Dependency
+vendor/
+node_modules/
+
+# File temporary
+*.log
+*.tmp
+
+# Cache
+.cache/
